@@ -31,10 +31,10 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "", propOrder = {
     "id"
 })
-@XmlRootElement(name = "getUpdateRequest", namespace = "http://communion.herokuapp.com/api/APIUpdates")
+@XmlRootElement(name = "getUpdateRequest", namespace = "http://communionweb.herokuapp.com/api/APIUpdates")
 public class GetUpdateRequest {
 
-    @XmlElement(namespace = "http://communion.herokuapp.com/api/APIUpdates")
+    @XmlElement(namespace = "http://communionweb.herokuapp.com/api/APIUpdates")
     protected int id;
 
     /**

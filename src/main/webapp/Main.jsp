@@ -147,7 +147,7 @@
     function search() {
         if (all) {
             var searchString = document.getElementById("sss").value;
-            console.log('req to https://communion.herokuapp.com/search?type=forums&key=' + searchString);
+            console.log('req to https://communionweb.herokuapp.com/search?type=forums&key=' + searchString);
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -171,13 +171,13 @@
                     }
                 }
             };
-            xhttp.open("GET", "https://communion.herokuapp.com/search?type=forums&key=" + searchString, true);
+            xhttp.open("GET", "https://communionweb.herokuapp.com/search?type=forums&key=" + searchString, true);
             xhttp.send();
         }
         else{
             var forumName = document.getElementById("sss").value;
             var userId = <%= uid %>;
-            console.log('req to https://communion.herokuapp.com/search?type=userforums&key=' + forumName + '&uid=' + userId);
+            console.log('req to https://communionweb.herokuapp.com/search?type=userforums&key=' + forumName + '&uid=' + userId);
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -201,7 +201,7 @@
                     }
                 }
             };
-            xhttp.open("GET", "https://communion.herokuapp.com/search?type=userforums&key=" + forumName + "&uid=" + userId, true);
+            xhttp.open("GET", "https://communionweb.herokuapp.com/search?type=userforums&key=" + forumName + "&uid=" + userId, true);
             xhttp.send();
         }
     }
@@ -209,7 +209,7 @@
     function searchgo() {
         if (all) {
             var searchString = document.getElementById("sss").value;
-            console.log('req to https://communion.herokuapp.com/search?type=forums&key=' + searchString);
+            console.log('req to https://communionweb.herokuapp.com/search?type=forums&key=' + searchString);
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -234,13 +234,13 @@
                     window.scrollTo(0,window.innerHeight/2);
                 }
             };
-            xhttp.open("GET", "https://communion.herokuapp.com/search?type=forums&key=" + searchString, true);
+            xhttp.open("GET", "https://communionweb.herokuapp.com/search?type=forums&key=" + searchString, true);
             xhttp.send();
         }
         else {
             var forumName = document.getElementById("sss").value;
             var userId = <%= uid %>;
-            console.log('req to https://communion.herokuapp.com/search?type=userforums&key=' + forumName + '&uid=' + userId);
+            console.log('req to https://communionweb.herokuapp.com/search?type=userforums&key=' + forumName + '&uid=' + userId);
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
@@ -265,7 +265,7 @@
                     window.scrollTo(0,window.innerHeight/2);
                 }
             };
-            xhttp.open("GET", "https://communion.herokuapp.com/search?type=userforums&key=" + forumName + "&uid=" + userId, true);
+            xhttp.open("GET", "https://communionweb.herokuapp.com/search?type=userforums&key=" + forumName + "&uid=" + userId, true);
             xhttp.send();
         }
     }

@@ -1,4 +1,4 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://communion.herokuapp.com/api/updates"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://communionweb.herokuapp.com/api/updates"
            elementFormDefault="qualified">
 
     <xs:element name="getUpdateRequest">

@@ -32,7 +32,7 @@
                             "\n\nready state = " + this.readyState + "\nstatus = " + this.status;
                     }
                 };
-                xhttp.open("POST", "https://communion.herokuapp.com/api/updateservice", true);
+                xhttp.open("POST", "https://communionweb.herokuapp.com/api/updateservice", true);
                 xhttp.body = document.getElementById("inputbody").value;
                 xhttp.send();
             }

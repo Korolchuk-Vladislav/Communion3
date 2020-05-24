@@ -30,7 +30,7 @@ public class APIUpdates extends HttpServlet{
             SOAPBody body = envelope.getBody();
             header.detachNode();
 
-            QName updatesBody = new QName("http://communion.herokuapp.com", "body", "APIUpdates");
+            QName updatesBody = new QName("http://communionweb.herokuapp.com", "body", "APIUpdates");
             SOAPBodyElement bodyElement = body.addBodyElement(updatesBody);
 
             for (Update upd : Database.getInstance().getUpdates().getUpdates()) {
