@@ -17,7 +17,7 @@ import static com.herokuapp.communion.models.User.GUEST_ID;
 
 @SuppressWarnings("serial")
 @WebServlet("/api/newforum")
-public class NewForum  extends HttpServlet {
+public class    NewForum  extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)

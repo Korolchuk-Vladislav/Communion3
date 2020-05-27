@@ -23,7 +23,7 @@ public class AddPost extends HttpServlet{
 
         try {
             if (Database.getInstance().newPost(post)){
-                resp.sendRedirect("Forum.jsp?forumId=" + req.getParameter("forumId") + "sectionId=" + req.getParameter("sectionId") + "topicId=" + req.getParameter("topicId"));
+                resp.sendRedirect("Forum.jsp?forumId=" + req.getParameter("forumId") + "&sectionId=" + req.getParameter("sectionId") + "&topicId=" + req.getParameter("topicId"));
             } else {
                 resp.sendRedirect("Error.jsp?message=section_didn't_created.");
             }
