@@ -5,9 +5,7 @@ import com.herokuapp.communion.models.Updates;
 
 import javax.jws.WebService;
 
-/**
- * Created by Александр on 28.05.2017.
- */
+
 @WebService
 public interface SOAPUpdates {
     public String changeString(String input);

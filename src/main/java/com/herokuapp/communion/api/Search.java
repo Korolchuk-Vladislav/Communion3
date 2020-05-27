@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by Александр on 16.05.2017.
- */
+
 @SuppressWarnings("serial")
 @WebServlet("/search")
 public class Search extends HttpServlet {

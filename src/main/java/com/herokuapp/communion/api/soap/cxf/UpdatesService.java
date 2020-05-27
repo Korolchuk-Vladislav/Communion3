@@ -8,9 +8,7 @@ import javax.jws.WebService;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-/**
- * Created by Александр on 28.05.2017.
- */
+
 @WebService(endpointInterface = "com.herokuapp.communion.api.soap.cxf.SOAPUpdates")
 public class UpdatesService implements SOAPUpdates {
     public String changeString(String input) {

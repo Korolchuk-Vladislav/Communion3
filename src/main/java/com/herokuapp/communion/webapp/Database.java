@@ -305,7 +305,8 @@ public class Database {
     }
 
 	public boolean newPost(Post p) throws SQLException, URISyntaxException{
-        String query = "insert into posts()";
+        String query = "insert into posts(userId, topicId, postName, post) values('" + p.getUserid() + "', '" + p.getTopicid() +"'," +
+				" '" + p.getPostName()+ "' , '" + p.getPost() +"');";
         Statement stmt = getConnection().createStatement();
         int rs = stmt.executeUpdate(query);
         return rs > 0;
